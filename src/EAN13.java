@@ -1,17 +1,32 @@
+/**
+ * Classe volta al controllo della validità di un codice EAN
+ * @author Andrea Gulfo
+ * @version 1.0
+ * @since 10/05/2023
+ */
 public class EAN13 {
     
     private String codice;
-
-   
+    /**
+     * Metodo volto alla creazione di nuove instanze
+     * @param c parametro volto al passaggio di una stringa contente il valore del codice EAN da controllare
+     */
+    
     public void setCodice(String c){
         codice = c;
     }
 
+    /**
+     * Metodo volto al ritorno in output del codice inserito per il controllo 
+     * */ 
     public String getCodice(){
         return codice;
     }
 
-
+     /**
+     * Metodo volto al controllo del codice inserito in precedenza 
+     * @return vero se il codice è corretto falso se invece il codice non rispetta le caratteristiche del codice EAN
+     * */ 
     public boolean verificaCodice(){
 
         // Verifica se l'attributo codice è vuoto o nullo
